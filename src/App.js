@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
-import Box from "./components/box";
-
-function Navbar() {
+function App() {
   return (
     <nav>
 
