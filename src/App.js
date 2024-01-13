@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import About from './webpages/About'; // Import the About component
+import About from './webpages/About';
+import Home from './webpages/Home';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home'); // Initial page is 'home'
 
   const handlePageChange = (page) => {
-    setCurrentPage(page);
+    setCurrentPage(page.toLowerCase()); // Convert the page name to lowercase
   };
 
   return (
@@ -20,8 +21,8 @@ function App() {
       </nav>
 
       {/* Render different components based on the current page */}
-      {currentPage === 'home' && <div>Home Page Content</div>}
-      {currentPage === 'about' && <About />} {/* Render the About component */}
+      {currentPage === 'home' &&  <Home />} 
+      {currentPage === 'about' && <About />} 
       {currentPage === 'donate' && <div>Donate Page Content</div>}
     </div>
   );
