@@ -10,7 +10,7 @@ const About = () => {
         <section className="big-text">
           <h1>About Us</h1>
           <p style={{fontSize:'20px'}}>
-          Five Santa Monica College students collaborated to participate in IDEA HACKS at UCLA, driven by this year's theme, "Celebrating Our Communities." Their collective focus aimed at accessibility, sustainability, and active community engagement. 
+          Five Santa Monica College students collaborated in their first hackathon, participating in IDEA HACKS at UCLA (2024), driven by this year's theme, "Celebrating Our Communities." Their collective focus aimed at accessibility, sustainability, and active community engagement. 
           Over the span of a 36-hour hackathon, these individuals pooled their expertise in electrical, hardware, software, and web development, demonstrating a collaborative effort to address challenges and contribute to the overarching theme of community celebration. 
           </p>
         </section>
@@ -22,13 +22,13 @@ const About = () => {
 
       </main>
       <div>
-      <section className="big-text" style={{marginTop:'-43%', marginLeft:'11%', fontFamily: 'Lato', fontSize:'20px'}}>
+      <section className="big-text" style={{marginTop:'-37%', marginLeft:'9%', fontFamily: 'Lato', fontSize:'20px'}}>
           <h1>Members<Text>   (left to right)</Text></h1>
           <p style={{}}> 
           <p style={{fontSize:'20px', paddingBottom:'4px'}}>
             Jovanna De La Trinidad - Web Development </p>
             <p style={{fontSize:'20px', paddingBottom:'4px'}}>
-            Semia - Hardware/Electrical
+            Semia Beji - Hardware/Electrical
           </p>
             <p style={{fontSize:'20px', paddingBottom:'4px'}}>
             Sebastain Rocha - Software Development </p>
