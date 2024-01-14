@@ -1,92 +1,36 @@
+// About.js
+
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-
-function App() {
+import "./style.css";
+import { Image } from 'react-native';
+const About = () => {
   return (
-    <View style={styles.imageContainer}>
-      <div style={styles.outerBorder}>
-      <div style={styles.rowHeader}>
-      <div style={{ flex: 1, justifyContent: 'center', border: '1px solid black',  }}>
-        <Text style={{ flex: 1, display: 'flex', textAlign: 'center', fontSize: '100%'}}>Sensor Sight Assist</Text></div>
-        <div>
-          <Text style = {{fontSize: '75%'}}>
-            Sensor sight assist is a product used to ...
-          </Text>
-        </div>
-      </div>
-      <div style={styles.rowHeader}>
-        image of our product
-        <img></img>
-      </div>
-    </div>
+    <div>
+      <main className="main">
+        <section className="big-text">
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet, <br />
+            adipisicing elit. Reprehenderit, perferendis? Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. <br />
+            Laudantium voluptatem quisquam, soluta nulla debitis deleniti.
+            Doloremque itaque repellendus tempora labore? <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            hic?
+          </p>
+        </section>
 
-    <div style={styles.outerBorder}>
-      <div style={styles.rowHeader}>
-      <div style={{ flex: 1, justifyContent: 'center', border: '1px solid black',  }}>
-        <Text style={{ flex: 1, display: 'flex', textAlign: 'center', fontSize: '100%'}}>Mission Statement</Text></div>
-        <div>
-          <Text style = {{fontSize: '75%'}}>
-            Our mission statement is...
-          </Text>
-        </div>
-      </div>
-      <div style={styles.rowHeader}>
-        image of our product
-        <img></img>
-      </div>
+        <section style={{alignItems:'center', justifyContent:'center'}}>
+        <Image source={require('../images/prototype.jpg')} style={{ width: 450, height: 450, resizeMode: 'cover', marginTop: '5%', borderRadius: '15px', alignContent:'center', justifyContent:'center'}} />
+        </section>
+      </main>
+
+      <section className="main-two">
+  <Image source={require('../images/sm2-removebg-preview.png')} style={{ width: 200, height: 100, marginRight: 50, resizeMode: 'contain'}} />
+</section>
+
     </div>
-    </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  imageContainer: {
-    display: 'flex',
-    flex: 1,
-    padding: 50,
-    border: '1px solid black',
-  },
-  outerBorder: {
-    fontSize: '200%',
-    padding: 20,
-    marginTop: '1px',
-    backgroundColor: 'green',
-    borderRadius: '10px',
-    border: '1px solid black',
-    margin: '5px',
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  header: {
-    flex: 1,
-    color: 'white',
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: '10px',
-    fontSize: '70px',
-    display: 'inline-block',
-    margin: '0 10px',
-    border: '1px solid black',
-  },
-  rowHeader: {
-    color: 'white',
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: '10px',
-    fontSize: '70px',
-    margin: '0 10px',
-    border: '1px solid black',
-  },
-  body: {
-    fontSize: 30,
-    color: 'black',
-    backgroundColor: 'yellow',
-    borderRadius: '10px',
-    border: '1px solid black',
-    width: '100%',
-    paddingTop: 10,
-    paddingBottom: 10,
-  },
-});
-
-export default App;
+export default About;
