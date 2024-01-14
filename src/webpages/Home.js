@@ -1,76 +1,34 @@
+// About.js
+
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-
-function App() {
+import "./style.css";
+import { Image } from 'react-native';
+const About = () => {
   return (
-    <View style={styles.imageContainer}>
-      <div style={styles.outerBorder}>
-      <div style={styles.rowHeader}>
-      <div style={{ flex: 1, justifyContent: 'center', border: '1px solid black',  }}>
-        <Text style={{ flex: 1, display: 'flex', textAlign: 'center', fontSize: '100%'}}>Sensor Sight Assist</Text></div>
-        <div>
-          <Text style = {{fontSize: '75%'}}>
-            Sensor sight assist is a product used to ...
-          </Text>
-        </div>
-      </div>
-      <div style={styles.rowHeader}>
-        image of our product
-        <img></img>
-      </div>
+    <div>
+      <main className="main">
+        <section className="big-text">
+          <h1>Sensory Sight Assist</h1>
+          <p style={{fontSize:'20px'}}>
+          Sensor Sight Assist, a revolutionary device designed to enhance the lives of individuals facing vision challenges. Our innovative solution is versatile, easily applicable to various environments, from hospital settings to private homes and nursing facilities. Sensor Sight Assist is tailored specifically for people with vision problems, providing a simple, low-cost tool to help them navigate and adapt to new surroundings with ease.
+
+Unlike permanent solutions, our device serves as a temporary aid, supporting individuals to successfully adapt to their environment. This adaptability makes Sensor Sight Assist a dynamic and responsive tool, ensuring it evolves with the changing needs of its users.
+
+At an affordable cost of around $10 per device, Sensor Sight Assist stands out as an economical choice for those seeking accessibility solutions. With an estimated total cost of $40 to $50 for the entire tool (including one device for each room), our product is not only effective but also budget-friendly. Our business model aims for sustainable growth, with revenue estimated at around $3 per device, making Sensor Sight Assist an accessible and impactful solution for individuals facing vision challenges in various settings. Join us in making a positive impact on the lives of those who need it most.
+          </p>
+        </section>
+
+        <section style={{alignItems:'center', justifyContent:'center'}}>
+        <Image source={require('../images/prototype.jpg')} style={{ width: 450, height: 450, resizeMode: 'cover', marginTop: '10%', marginLeft:'15%', borderRadius: '15px', alignContent:'center', justifyContent:'center'}} />
+        </section>
+      </main>
+<div style={{marginBottom:"100%"}}>
+      <section className="main-two">
+  <Image source={require('../images/sm2-removebg-preview.png')} style={{ width: 200, height: 100, resizeMode: 'contain'}} />
+</section>
+</div>
     </div>
-    </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  imageContainer: {
-    display: 'flex',
-    flex: 1,
-    padding: 50,
-    border: '1px solid black',
-  },
-  outerBorder: {
-    fontSize: '200%',
-    padding: 20,
-    marginTop: '1px',
-    backgroundColor: 'green',
-    borderRadius: '10px',
-    border: '1px solid black',
-    margin: '5px',
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  header: {
-    flex: 1,
-    color: 'white',
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: '10px',
-    fontSize: '70px',
-    display: 'inline-block',
-    margin: '0 10px',
-    border: '1px solid black',
-  },
-  rowHeader: {
-    color: 'white',
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: '10px',
-    fontSize: '70px',
-    margin: '0 10px',
-    border: '1px solid black',
-  },
-  body: {
-    fontSize: 30,
-    color: 'black',
-    backgroundColor: 'yellow',
-    borderRadius: '10px',
-    border: '1px solid black',
-    width: '100%',
-    paddingTop: 10,
-    paddingBottom: 10,
-  },
-});
-
-export default App;
+export default About;

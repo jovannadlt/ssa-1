@@ -12,28 +12,29 @@ function App() {
   };
 
   return (
-    <div>
-      <nav className="navbar">
-        <ul>
-          <li>
-          <li>
-  <Image source={require('./images/eye-removebg-preview.png')} style={{ width: 70, height: 70, marginTop: '-30%', marginLeft: '-10%' }} />
-</li>
+    <div >
+      <nav className="navbar" >
+        <ul style={{marginLeft: '-21%', marginTop:'1.2%'}}>
+          <li >
+            <Image source={require('./images/eye-removebg-preview.png')} style={{ width: 70, height: 70, marginTop: '-30%' }} />
           </li>
           <li
             onMouseOver={() => (document.body.style.cursor = 'pointer')}
             onClick={() => handlePageChange('home')}
+            style={{fontSize:'25px'}}
           >
             Home
           </li>
           <li 
             onMouseOver={() => (document.body.style.cursor = 'pointer')}
-            onClick={() => handlePageChange('about')}>
+            onClick={() => handlePageChange('about')}
+            style={{fontSize:'25px'}}>
             About Us
           </li>
           <li 
           onMouseOver={() => (document.body.style.cursor = 'pointer')}
-          onClick={() => handlePageChange('donate')}>Donate</li>
+          onClick={() => handlePageChange('donate')}
+          style={{fontSize:'25px'}}>Donate</li>
         </ul>
       </nav>
 
